@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phoenix Air Department — Phoenix's 24/7 AC Emergency Response Unit | AC, Heating & Plumbing</title>
+<meta name="description" content="When your AC quits in the Phoenix heat, dispatch the Air Department. 24/7 emergency AC repair, installs, heating & plumbing across the Valley. Licensed since 2015 · ROC #329176 · BBB A+. Same-day service, honest pricing.">
+<meta name="theme-color" content="#E21319">
+<meta property="og:title" content="Phoenix Air Department — Phoenix's AC Emergency Response Unit">
+<meta property="og:description" content="24/7 emergency AC repair, installs, heating & plumbing across the Valley. Fast, honest, licensed since 2015.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 28'%3E%3Cpath d='M12 1 22 5v8c0 7-4.5 11.5-10 14C6.5 24.5 2 20 2 13V5z' fill='%23E21319'/%3E%3Cpolygon points='12,7.8 13.23,11.3 16.95,11.39 14,13.65 15.06,17.21 12,15.1 8.94,17.21 10,13.65 7.05,11.39 10.77,11.3' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E21319; --red2:#B40F14; --red-soft:#FFF1F1;
+  --ink:#111111; --ink2:#1c1c1e; --char:#161618;
+  --paper:#ffffff; --paper2:#F7F6F3; --paper3:#F1EFEA;
+  --line:#E7E3DB; --line2:#D8D3C8;
+  --muted:#5E5C57; --dim:#8C887F;
+  --disp:"Space Grotesk",system-ui,sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --mono:"Space Mono",ui-monospace,monospace;
+  --r-sm:10px; --r-md:16px; --r-lg:26px; --r-xl:34px;
+  --content:1200px;
+  --sh-sm:0 1px 2px rgba(17,17,17,.04),0 8px 24px rgba(17,17,17,.06);
+  --sh-md:0 10px 30px rgba(17,17,17,.08),0 30px 70px rgba(17,17,17,.10);
+  --sh-red:0 14px 30px rgba(226,19,25,.26);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--body);min-width:320px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;-webkit-tap-highlight-color:transparent}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2.5px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{width:min(calc(100% - 44px),var(--content));margin-inline:auto;position:relative}
+.mono{font-family:var(--mono)}
+h1,h2,h3{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;line-height:1.02;margin:0}
+p{margin:0}
+.ico{width:1em;height:1em;fill:currentColor;flex:none}
+
+/* eyebrow / kicker */
+.kick{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.kick::before{content:"";width:22px;height:2px;background:var(--red);border-radius:2px}
+.kick.ink{color:var(--ink)} .kick.ink::before{background:var(--ink)}
+.kick.lite{color:#fff} .kick.lite::before{background:var(--red)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 26px;border-radius:var(--r-sm);font-family:var(--disp);font-weight:600;font-size:1rem;letter-spacing:-.01em;transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s,background .18s,color .18s;will-change:transform}
+.btn-red{background:var(--red);color:#fff;box-shadow:var(--sh-red)}
+.btn-red:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(226,19,25,.34)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{transform:translateY(-3px);box-shadow:var(--sh-md)}
+.btn-line{background:#fff;color:var(--ink);border:1.5px solid var(--line2)}
+.btn-line:hover{border-color:var(--ink);transform:translateY(-3px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.34)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.btn .ico{width:1.1em;height:1.1em}
+
+/* progress + header */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;background:transparent;z-index:120}
+.progress i{display:block;height:100%;width:0;background:var(--red)}
+.topbar{background:var(--ink);color:#fff;font-size:.82rem;position:relative;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:center;gap:12px;min-height:40px;text-align:center;flex-wrap:wrap}
+.topbar b{font-weight:700}
+.topbar .dot{width:7px;height:7px;border-radius:50%;background:#36d36f;box-shadow:0 0 0 0 rgba(54,211,111,.6);animation:pulse 2.2s infinite}
+.topbar a.callnum{color:#fff;font-family:var(--mono);font-weight:700;border-bottom:1px solid var(--red);padding-bottom:1px;white-space:nowrap}
+.topbar .x{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#9a9a9a;font-size:1.1rem;line-height:1;padding:6px}
+.topbar .x:hover{color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(54,211,111,.5)}70%{box-shadow:0 0 0 8px rgba(54,211,111,0)}100%{box-shadow:0 0 0 0 rgba(54,211,111,0)}}
+
+header.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.86);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
+header.nav.scrolled{border-color:var(--line);box-shadow:0 6px 24px rgba(17,17,17,.05)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px;width:min(calc(100% - 44px),var(--content));margin-inline:auto}
+.brand{display:flex;align-items:center;gap:11px;min-width:max-content}
+.brand .crest{width:34px;height:38px;display:grid;place-items:center;flex:none}
+.brand .crest svg{width:34px;height:38px;filter:drop-shadow(0 4px 8px rgba(226,19,25,.25))}
+.brand .wm{display:flex;flex-direction:column;line-height:1}
+.brand .wm b{font-family:var(--disp);font-weight:700;font-size:1.04rem;letter-spacing:-.02em;color:var(--ink);text-transform:uppercase}
+.brand .wm small{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;color:var(--red);text-transform:uppercase;margin-top:3px}
+nav.links{display:flex;gap:4px;align-items:center}
+nav.links a{padding:9px 13px;border-radius:8px;font-size:.92rem;font-weight:500;color:var(--muted);transition:.16s}
+nav.links a:hover{color:var(--ink);background:var(--paper2)}
+.nav-cta{display:flex;align-items:center;gap:10px;min-width:max-content}
+.nav-call{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:700;font-size:.92rem;color:var(--ink)}
+.nav-call .ico{color:var(--red);width:1.05em;height:1.05em}
+.nav-book{min-height:44px;padding:0 18px;border-radius:8px;background:var(--red);color:#fff;font-family:var(--disp);font-weight:600;font-size:.92rem;transition:.18s}
+.nav-book:hover{background:var(--red2);transform:translateY(-2px);box-shadow:var(--sh-red)}
+.burger{display:none;width:46px;height:46px;border-radius:10px;border:1px solid var(--line2);background:#fff;align-items:center;justify-content:center}
+.burger svg{width:20px;height:20px}
+.mobile-menu{position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--sh-md);display:flex;flex-direction:column;gap:2px;padding:0 14px;max-height:0;overflow:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;transition:max-height .32s ease,opacity .24s,transform .24s,padding .24s}
+.mobile-menu.open{max-height:78vh;opacity:1;transform:none;pointer-events:auto;padding:12px 14px}
+.mobile-menu a{padding:13px 12px;border-radius:9px;font-family:var(--disp);font-weight:600;font-size:1.02rem;color:var(--ink)}
+.mobile-menu a:hover{background:var(--paper2)}
+.mobile-menu .mm-call{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:6px;background:var(--red);color:#fff}
+.mobile-menu .mm-call .ico{width:1.1em;height:1.1em}
+
+/* hero */
+.hero{position:relative;padding:36px 0 38px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-180px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(226,19,25,.10),transparent 66%);pointer-events:none}
+.hero-bg{position:absolute;top:0;right:0;bottom:0;width:54%;z-index:0;pointer-events:none}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:58% center}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,#fff 10%,rgba(255,255,255,.82) 30%,rgba(255,255,255,.3) 62%,rgba(255,255,255,0) 100%),linear-gradient(0deg,rgba(255,255,255,.4),transparent 24%)}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(30px,5vw,64px);align-items:center}
+.h-eye{margin-bottom:14px}
+h1.h-title{font-size:clamp(2.35rem,5.1vw,3.95rem);letter-spacing:-.035em}
+h1.h-title .ln{display:block;overflow:hidden;padding-bottom:.08em}
+h1.h-title .ln:nth-child(4){padding-bottom:.5em}
+h1.h-title .ln>span{display:block;transform:translateY(116%);animation:lineUp .85s cubic-bezier(.2,.85,.2,1) both}
+h1.h-title .ln:nth-child(1)>span{animation-delay:.05s}
+h1.h-title .ln:nth-child(2)>span{animation-delay:.14s}
+h1.h-title .ln:nth-child(3)>span{animation-delay:.23s}
+h1.h-title .ln:nth-child(4)>span{animation-delay:.32s}
+@keyframes lineUp{to{transform:none}}
+h1.h-title .u{position:relative;white-space:nowrap}
+h1.h-title .u svg{position:absolute;left:0;right:0;bottom:-.05em;width:100%;height:.32em;overflow:visible}
+h1.h-title .u svg path{fill:none;stroke:var(--red);stroke-width:8;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;pathLength:1;animation:draw 1s .95s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.h-sub{margin-top:15px;max-width:500px;font-size:1.04rem;color:var(--muted)}
+.h-sub b{color:var(--ink);font-weight:600}
+.h-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.h-badges{display:flex;flex-wrap:wrap;gap:8px 9px;margin-top:16px;padding-top:15px;border-top:1px solid var(--line)}
+.h-badges span{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.04em;color:var(--ink);background:var(--paper2);border:1px solid var(--line);padding:7px 11px;border-radius:99px}
+.h-badges span .ico{width:.95em;height:.95em;color:var(--red)}
+
+.hero-form{position:relative}
+.hf-block{position:absolute;right:-18px;top:-18px;width:128px;height:128px;border-radius:22px;background:var(--red);z-index:0}
+.hf-block::before{content:"";position:absolute;inset:0;border-radius:22px;background-image:radial-gradient(rgba(255,255,255,.28) 1.3px,transparent 1.4px);background-size:13px 13px}
+.hf-card{position:relative;z-index:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-md);overflow:hidden}
+.hf-head{display:flex;align-items:center;gap:13px;padding:15px 22px;background:var(--ink);color:#fff}
+.hf-head .em{width:38px;height:42px;display:grid;place-items:center;flex:none}
+.hf-head .em svg{width:38px;height:42px;filter:drop-shadow(0 4px 8px rgba(226,19,25,.4))}
+.hf-head b{font-family:var(--disp);font-weight:700;font-size:1.14rem;letter-spacing:-.01em;display:block;line-height:1.1}
+.hf-head small{display:block;color:#b6b4ae;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+.hf-body{padding:18px 22px 20px}
+.hf-body .field,.hf-body .row2{margin-top:11px}
+#hffields>*:first-child{margin-top:0}
+.hf-body .btn{width:100%;margin-top:15px}
+.hf-note{margin-top:13px;display:flex;align-items:center;justify-content:center;gap:7px;text-align:center;color:var(--muted);font-size:.78rem}
+.hf-done{display:none;text-align:center;padding:14px 6px 8px}
+.hf-done.show{display:block}
+.hf-done .ck{width:54px;height:54px;border-radius:50%;background:var(--red);display:grid;place-items:center;margin:0 auto 14px}
+.hf-done .ck .ico{width:28px;height:28px;color:#fff}
+.hf-done b{font-family:var(--disp);font-size:1.2rem;color:var(--ink)}
+.hf-done p{margin-top:8px;color:var(--muted);font-size:.88rem}
+.hf-done a{color:var(--red);font-weight:600}
+
+/* marquee */
+.marquee{background:var(--ink);color:#fff;overflow:hidden;padding:16px 0;border-top:3px solid var(--red)}
+.marquee .track{display:flex;gap:0;width:max-content;animation:scroll 34s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{display:inline-flex;align-items:center;gap:13px;padding:0 26px;font-family:var(--mono);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#EDEDED;white-space:nowrap}
+.marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sections */
+section{position:relative}
+.sec{padding:clamp(64px,9vw,118px) 0}
+.sec-head{max-width:760px;margin-bottom:54px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.3rem);margin-top:16px}
+.sec-head h2 .r{color:var(--red)}
+.sec-head p{margin-top:18px;font-size:1.08rem;color:var(--muted)}
+.sec-num{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+
+/* identity / stats band */
+.ident{background:var(--paper2)}
+.ident-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(34px,5vw,68px);align-items:center}
+.ident-copy h2{font-size:clamp(1.9rem,4.2vw,3rem);margin-top:16px}
+.ident-copy p{margin-top:20px;color:var(--muted);font-size:1.06rem}
+.ident-copy p+p{margin-top:14px}
+.ident-van{position:relative;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);box-shadow:var(--sh-sm);padding:22px;overflow:hidden}
+.ident-van::before{content:"";position:absolute;left:0;top:0;width:100%;height:6px;background:var(--red)}
+.ident-van img{width:100%;height:auto;border-radius:12px;animation:vanfloat 4.6s ease-in-out infinite;will-change:transform}
+@keyframes vanfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.ident-van .cap{display:flex;align-items:center;gap:9px;margin-top:14px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ident-van .cap b{color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:60px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:26px 22px;position:relative;overflow:hidden}
+.stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .5s}
+.in .stat::before{transform:scaleY(1)}
+.stat b{font-family:var(--disp);font-weight:700;font-size:clamp(2.1rem,4vw,2.9rem);color:var(--ink);line-height:1;letter-spacing:-.03em;display:block}
+.stat b .s{color:var(--red)}
+.stat span{display:block;margin-top:11px;color:var(--muted);font-size:.9rem;line-height:1.4}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.svc{grid-column:span 2;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s,border-color .28s;position:relative}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--sh-md);border-color:var(--line2)}
+.svc.feat{grid-column:span 3}
+.svc-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper3)}
+.svc.feat .svc-img{aspect-ratio:16/8}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.svc:hover .svc-img img{transform:scale(1.06)}
+.svc-tags{position:absolute;left:14px;top:14px;display:flex;gap:6px;flex-wrap:wrap}
+.svc-tags i{font-style:normal;font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(17,17,17,.82);color:#fff;padding:5px 9px;border-radius:6px;backdrop-filter:blur(4px)}
+.svc-tags i.hot{background:var(--red)}
+.svc-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.svc-body h3{font-size:1.22rem}
+.svc-body p{margin-top:9px;color:var(--muted);font-size:.92rem;flex:1}
+.svc-more{display:inline-flex;align-items:center;gap:7px;margin-top:16px;font-family:var(--disp);font-weight:600;font-size:.9rem;color:var(--red)}
+.svc-more .ico{transition:transform .2s}
+.svc:hover .svc-more .ico{transform:translateX(4px)}
+
+/* why us */
+.why{background:var(--ink);color:#fff;overflow:hidden}
+.why .sec-head h2{color:#fff}
+.why .sec-head p{color:#B6B4AE}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why-card{background:#1d1d20;border:1px solid #2a2a2e;border-radius:var(--r-md);padding:30px 24px;transition:transform .25s,background .25s}
+.why-card:hover{transform:translateY(-6px);background:#232327}
+.why-card .n{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--red);text-transform:uppercase}
+.why-card .em{width:48px;height:48px;border-radius:12px;background:var(--red);display:grid;place-items:center;margin:18px 0}
+.why-card .em .ico{width:24px;height:24px;color:#fff}
+.why-card h3{color:#fff;font-size:1.18rem}
+.why-card p{margin-top:10px;color:#A9A7A1;font-size:.92rem}
+.why-quote{margin-top:50px;display:flex;align-items:flex-start;gap:18px;max-width:880px}
+.why-quote .mk{font-family:var(--disp);font-size:4rem;color:var(--red);line-height:.7;flex:none}
+.why-quote p{font-family:var(--disp);font-weight:500;font-size:clamp(1.2rem,2.4vw,1.7rem);color:#fff;letter-spacing:-.01em;line-height:1.32}
+.why-quote cite{display:block;margin-top:14px;font-family:var(--mono);font-size:.8rem;font-style:normal;color:var(--red);letter-spacing:.06em}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.rev:hover{transform:translateY(-5px);box-shadow:var(--sh-sm)}
+.rev .stars{display:flex;gap:2px;color:var(--red)}
+.rev .stars .ico{width:18px;height:18px}
+.rev p{margin-top:14px;color:var(--ink);font-size:1rem;line-height:1.55;flex:1}
+.rev .who{display:flex;align-items:center;gap:11px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.rev .av{width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--disp);font-weight:700;font-size:1rem;flex:none}
+.rev .who b{display:block;font-size:.92rem;font-weight:600}
+.rev .who small{display:block;color:var(--dim);font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;margin-top:2px}
+.rev-foot{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:center;text-align:center;font-size:.92rem;color:var(--muted)}
+.rev-foot .pill{display:inline-flex;align-items:center;gap:8px;background:var(--red-soft);border:1px solid #F6CFD0;color:var(--red2);font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:99px}
+
+/* google + bbb trust badges */
+.gstars{color:#FBBC04;letter-spacing:1px;line-height:1;white-space:nowrap}
+.gg{flex:none}
+.hero-rating{display:inline-flex;align-items:center;gap:10px;margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 15px;box-shadow:var(--sh-sm);transition:transform .2s,box-shadow .2s}
+.hero-rating:hover{transform:translateY(-2px);box-shadow:var(--sh-md)}
+.hero-rating .gg{width:20px;height:20px}
+.hero-rating b{font-family:var(--disp);font-weight:700;font-size:1.04rem;color:var(--ink)}
+.hero-rating .gstars{font-size:1rem}
+.hero-rating small{color:var(--muted);font-size:.8rem;font-family:var(--mono)}
+.hero-rating .sep{width:1px;height:18px;background:var(--line2)}
+.rating-summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-bottom:36px}
+.gcard{display:inline-flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:16px 22px;box-shadow:var(--sh-sm);transition:transform .2s,box-shadow .2s}
+.gcard:hover,.bbb-seal:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.gcard .gg{width:34px;height:34px}
+.gcard .num{font-family:var(--disp);font-weight:700;font-size:1.7rem;color:var(--ink);line-height:1}
+.gcard .meta{display:flex;flex-direction:column;gap:4px;text-align:left}
+.gcard .meta .gstars{font-size:1.05rem}
+.gcard .meta small{color:var(--muted);font-size:.78rem;font-family:var(--mono);letter-spacing:.02em}
+.bbb-seal{display:inline-flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:14px 22px;box-shadow:var(--sh-sm);transition:transform .2s,box-shadow .2s}
+.bbb-seal img{height:38px;width:auto}
+
+/* plans + financing */
+.plans{background:var(--paper2)}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.plan{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:30px 28px;display:flex;flex-direction:column;position:relative;transition:transform .25s,box-shadow .25s}
+.plan:hover{transform:translateY(-6px);box-shadow:var(--sh-md)}
+.plan.best{border-color:var(--red);box-shadow:0 0 0 1px var(--red),var(--sh-md)}
+.plan .tier{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.plan.best .tier{color:var(--red)}
+.plan .flag{position:absolute;right:22px;top:22px;font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;padding:5px 10px;border-radius:6px}
+.plan .price{display:flex;align-items:baseline;gap:5px;margin:16px 0 4px}
+.plan .price b{font-family:var(--disp);font-weight:700;font-size:2.7rem;letter-spacing:-.03em;color:var(--ink)}
+.plan .price span{color:var(--muted);font-family:var(--mono);font-size:.82rem}
+.plan ul{list-style:none;margin:20px 0 26px;padding:0;display:grid;gap:11px;flex:1}
+.plan li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--muted)}
+.plan li .ico{width:18px;height:18px;color:var(--red);margin-top:2px;flex:none}
+.plan li b{color:var(--ink);font-weight:600}
+.fin{margin-top:20px;background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(26px,4vw,42px);display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;overflow:hidden;position:relative}
+.fin::before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(226,19,25,.4),transparent 64%)}
+.fin .kick{color:#fff}.fin .kick::before{background:var(--red)}
+.fin h3{font-size:clamp(1.5rem,3vw,2.1rem);color:#fff;margin-top:14px}
+.fin p{margin-top:12px;color:#B6B4AE;font-size:.98rem;max-width:480px}
+.fin .act{display:flex;flex-direction:column;gap:12px;position:relative}
+.fin .wise{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#8C887F}
+
+/* comfort band */
+.band{position:relative;min-height:440px;display:flex;align-items:center;color:#fff;overflow:hidden}
+.band img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.band .scrim{position:absolute;inset:0;z-index:1}
+.band.dark .scrim{background:linear-gradient(90deg,rgba(17,17,17,.9) 0%,rgba(17,17,17,.66) 48%,rgba(17,17,17,.2) 100%)}
+.band .wrap{z-index:2;padding:70px 0}
+.band-in{max-width:620px}
+.band h2{font-size:clamp(1.9rem,4.4vw,3.1rem);color:#fff}
+.band h2 .r{color:#ff5b5f}
+.band p{margin-top:18px;font-size:1.1rem;color:#E8E6E2}
+.band .b-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.band .guar{display:inline-flex;align-items:center;gap:11px;margin-bottom:22px;font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:99px}
+.band .guar .ico{color:#ff5b5f;width:1.1em;height:1.1em}
+
+/* service area */
+.area-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(30px,5vw,64px);align-items:center}
+.area-copy h2{font-size:clamp(1.9rem,4.2vw,2.9rem);margin-top:16px}
+.area-copy p{margin-top:18px;color:var(--muted);font-size:1.05rem}
+.area-copy .map{margin-top:26px;display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:.78rem;color:var(--ink)}
+.area-copy .map .ico{color:var(--red);width:1.2em;height:1.2em}
+.cities{display:flex;flex-wrap:wrap;gap:10px}
+.cities span{font-family:var(--disp);font-weight:600;font-size:.95rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 15px;transition:.2s}
+.cities span:hover{border-color:var(--red);color:var(--red);transform:translateY(-2px)}
+.cities span.star{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* contact */
+.contact{background:var(--char);color:#fff}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(34px,5vw,70px)}
+.contact .sec-head h2{color:#fff}
+.contact .sec-head p{color:#B6B4AE}
+.c-lines{margin-top:30px;display:grid;gap:8px}
+.c-line{display:flex;align-items:center;gap:15px;padding:16px 0;border-bottom:1px solid #2a2a2e}
+.c-line .em{width:44px;height:44px;border-radius:11px;background:#1d1d20;border:1px solid #2a2a2e;display:grid;place-items:center;flex:none}
+.c-line .em .ico{width:20px;height:20px;color:var(--red)}
+.c-line b{display:block;font-size:1.05rem;font-family:var(--disp);font-weight:600}
+.c-line small{display:block;color:#9a988f;font-size:.82rem;margin-top:2px;font-family:var(--mono);letter-spacing:.04em}
+.c-line a{color:#fff}
+.form{background:#fff;border-radius:var(--r-lg);padding:clamp(24px,3vw,36px);box-shadow:var(--sh-md)}
+.form h3{color:var(--ink);font-size:1.4rem}
+.form p.sub{color:var(--muted);font-size:.92rem;margin-top:8px}
+.field{margin-top:16px}
+.field label{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:.96rem;color:var(--ink);background:var(--paper2);border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;transition:.18s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red);background:#fff;box-shadow:0 0 0 4px var(--red-soft)}
+.field textarea{resize:vertical;min-height:92px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .btn{width:100%;margin-top:20px}
+.form .fineprint{margin-top:14px;text-align:center;color:var(--dim);font-size:.78rem}
+.form-done{display:none;text-align:center;padding:30px 10px}
+.form-done.show{display:block}
+.form-done .ck{width:64px;height:64px;border-radius:50%;background:var(--red);display:grid;place-items:center;margin:0 auto 18px}
+.form-done .ck .ico{width:32px;height:32px;color:#fff}
+.form-done h3{color:var(--ink)}
+.form-done p{color:var(--muted);margin-top:10px}
+
+/* footer */
+footer.ft{background:var(--ink);color:#fff;padding:64px 0 30px}
+.ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;padding-bottom:40px;border-bottom:1px solid #2a2a2e}
+.ft-brand .brand .wm b{color:#fff}
+.ft-brand p{margin-top:18px;color:#A9A7A1;font-size:.94rem;max-width:330px}
+.ft-social{display:flex;gap:10px;margin-top:20px}
+.ft-social a{width:42px;height:42px;border-radius:11px;background:#1d1d20;border:1px solid #2a2a2e;display:grid;place-items:center;transition:.2s}
+.ft-social a:hover{background:var(--red);border-color:var(--red);transform:translateY(-3px)}
+.ft-social a .ico{width:18px;height:18px;color:#fff}
+.ft-col h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 16px;font-weight:700}
+.ft-col a,.ft-col p{display:block;color:#B6B4AE;font-size:.92rem;margin-bottom:11px;transition:.16s}
+.ft-col a:hover{color:#fff}
+.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;color:#7d7b75;font-size:.8rem;font-family:var(--mono);letter-spacing:.03em}
+
+/* sticky mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:110;display:none;grid-template-columns:1fr 1fr;gap:1px;background:var(--line2);box-shadow:0 -6px 24px rgba(17,17,17,.12)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:60px;font-family:var(--disp);font-weight:600;font-size:1rem}
+.mbar a.call{background:var(--red);color:#fff}
+.mbar a.book{background:var(--ink);color:#fff}
+.mbar a .ico{width:1.15em;height:1.15em}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}
+.reveal[data-d="4"]{transition-delay:.32s}
+
+/* responsive */
+@media(max-width:1080px){
+  nav.links{display:none}
+  .burger{display:flex}
+  .ft-top{grid-template-columns:1.4fr 1fr}
+}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:46px}
+  .hero-bg{display:none}
+  .hero-form{max-width:440px;margin-inline:auto;width:100%}
+  .h-sub{max-width:none}
+  .ident-grid,.area-grid,.contact-grid,.fin{grid-template-columns:1fr}
+  .fin{gap:22px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .svc,.svc.feat{grid-column:span 1}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-grid,.plan-grid{grid-template-columns:1fr}
+  .ident-van{order:-1}
+}
+@media(max-width:680px){
+  .nav-call span{display:none}
+  .burger{display:flex}
+  .nav-cta .nav-book{display:none}
+  .mbar{display:grid}
+  body{padding-bottom:60px}
+  .h-cta .btn{flex:1;min-width:100%}
+  .row2{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr}
+  .hf-block{right:8px;top:-12px;width:96px;height:96px}
+  .topbar .x{display:none}
+  .why-quote{flex-direction:column;gap:6px}
+}
+@media(max-width:430px){
+  .stats{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  .h-title .ln>span{transform:none!important}
+  .h-title .u svg path{stroke-dashoffset:0}
+  .band img.bg{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- reusable icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="shield" viewBox="0 0 24 28"><path d="M12 1 22 5v8c0 7-4.5 11.5-10 14C6.5 24.5 2 20 2 13V5z"/><polygon points="12,7.8 13.23,11.3 16.95,11.39 14,13.65 15.06,17.21 12,15.1 8.94,17.21 10,13.65 7.05,11.39 10.77,11.3" fill="#fff"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 5.9 6.5.95-4.7 4.6 1.1 6.45L12 17.9 6.2 20.9l1.1-6.45-4.7-4.6 6.5-.95z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M16 13h2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="hands" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.2-9C1 9 2.4 5.5 6 5.5c2 0 3.2 1.3 4 2.4.8-1.1 2-2.4 4-2.4 3.6 0 5 3.5 3.2 6.5C19 16.5 12 21 12 21z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2c4 0 7 3 7 7 0 5-7 13-7 13S5 14 5 9c0-4 3-7 7-7z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.6"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="fb" viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-3.5 1.5-3.5 3.6V12H8v3h2.5v6h3v-6H16l.5-3h-3V9.8c0-.5.3-.8 1-.8z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3"/></symbol>
+  <symbol id="wrench" viewBox="0 0 24 24"><path d="M21 6.5a4.6 4.6 0 0 1-6 4.4L7.3 18.6a2 2 0 1 1-2.8-2.8l7.6-7.7A4.6 4.6 0 0 1 18.2 3l-2.7 2.7 1.8 1.8L20 4.8c.6.5 1 1.1 1 1.7z"/></symbol>
+  <symbol id="flame" viewBox="0 0 24 24"><path d="M12 2c1 4-2.5 5-2.5 8.5A2.5 2.5 0 0 0 12 13a2 2 0 0 0 2-2c2 1.5 3 3.5 3 5.5a5 5 0 0 1-10 0C7 12 11 9 12 2z"/></symbol>
+  <symbol id="snow" viewBox="0 0 24 24"><path d="M12 2v20M4 7l16 10M20 7L4 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0C6 9.5 12 3 12 3z"/></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19c0-9 6-14 15-14 0 9-5 15-14 15 0 0-.5-4 3-7 0 0 3-2.5 5-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="gicon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol>
+</svg>
+
+<div class="progress"><i id="prog"></i></div>
+
+<!-- emergency top bar -->
+<div class="topbar" id="topbar">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span><b>24/7 Emergency Response</b> — AC down in the heat? Dispatch us now:</span>
+    <a class="callnum" href="tel:+16025866001">(602)&nbsp;586-6001</a>
+    <button class="x" id="topx" aria-label="Dismiss">×</button>
+  </div>
+</div>
+
+<!-- header -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top" aria-label="Phoenix Air Department home">
+      <span class="crest"><svg viewBox="0 0 24 28" style="fill:var(--red)"><use href="#shield"/></svg></span>
+      <span class="wm"><b>Phoenix Air Dept.</b><small>Emergency Response Unit</small></span>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#plans">Plans</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-call" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg><span>(602) 586-6001</span></a>
+      <a class="nav-book" href="#contact">Book Now</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu"><svg viewBox="0 0 24 24"><use href="#menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#plans">Plans</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact">Contact</a>
+    <a class="mm-call" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg>Call (602) 586-6001</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero-bg"><picture><source srcset="assets/curated/hero.webp" type="image/webp"><img src="assets/curated/hero.jpg" alt="" aria-hidden="true" width="1700" height="1133" fetchpriority="high"></picture></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="kick h-eye reveal">Phoenix &amp; the Valley · Est. 2015 · ROC #329176</span>
+      <h1 class="h-title">
+        <span class="ln"><span>When the heat</span></span>
+        <span class="ln"><span>takes out your AC,</span></span>
+        <span class="ln"><span>dispatch the</span></span>
+        <span class="ln"><span><span class="u">Air Department<svg viewBox="0 0 300 12" preserveAspectRatio="none"><path d="M2 8C70 3 230 3 298 7" pathLength="1"/></svg></span>.</span></span>
+      </h1>
+      <p class="h-sub reveal" data-d="2">Phoenix's 24/7 emergency unit for <b>AC, heating &amp; plumbing</b> — we show up fast, price it straight, and get you cool again. Same day, most days.</p>
+      <a class="hero-rating reveal" data-d="2" href="https://www.google.com/search?q=Phoenix+Air+Department+Tempe+AZ+reviews" target="_blank" rel="noopener" aria-label="4.9 stars from 256 Google reviews">
+        <svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg>
+        <b>4.9</b><span class="gstars">★★★★★</span>
+        <span class="sep"></span>
+        <small>256 Google reviews</small>
+      </a>
+      <div class="h-cta reveal" data-d="3">
+        <a class="btn btn-red" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg>Call (602) 586-6001</a>
+        <a class="btn btn-line" href="#contact">Book a free estimate</a>
+      </div>
+      <div class="h-badges reveal" data-d="4">
+        <span><svg class="ico"><use href="#shield"/></svg>BBB A+ Accredited</span>
+        <span><svg class="ico"><use href="#check"/></svg>Bryant Factory Dealer</span>
+        <span><svg class="ico"><use href="#star"/></svg>Nextdoor Favorite ’23</span>
+        <span><svg class="ico"><use href="#check"/></svg>Licensed · Bonded · Insured</span>
+      </div>
+    </div>
+    <aside class="hero-form reveal" data-d="2">
+      <div class="hf-block"></div>
+      <div class="hf-card">
+        <div class="hf-head">
+          <span class="em"><svg viewBox="0 0 24 28" style="fill:var(--red)"><use href="#shield"/></svg></span>
+          <div><b>Get a fast, free estimate</b><small>24/7 Dispatch · No obligation</small></div>
+        </div>
+        <form class="hf-body" id="heroform" novalidate>
+          <div id="hffields">
+            <div class="field"><label for="hn">Name</label><input id="hn" name="name" type="text" placeholder="Jane Smith" required></div>
+            <div class="row2">
+              <div class="field"><label for="hp">Phone</label><input id="hp" name="phone" type="tel" placeholder="(602) 555-0123" required></div>
+              <div class="field"><label for="hsv">Service</label><select id="hsv" name="service"><option>AC repair</option><option>AC replacement</option><option>Heating / furnace</option><option>Maintenance plan</option><option>Plumbing</option><option>Other</option></select></div>
+            </div>
+            <button class="btn btn-red" type="submit"><svg class="ico"><use href="#bolt"/></svg>Request service</button>
+            <p class="hf-note"><svg class="ico" style="width:1em;height:1em;color:var(--good)"><use href="#check"/></svg>A real person calls you back — usually in minutes.</p>
+          </div>
+          <div class="hf-done" id="hfdone">
+            <div class="ck"><svg class="ico"><use href="#check"/></svg></div>
+            <b>Request received!</b>
+            <p>The Air Department will reach out shortly. Emergency? <a href="tel:+16025866001">Call (602) 586-6001</a>.</p>
+          </div>
+        </form>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="track">
+    <span>ROC #329176</span><span>BBB A+ Accredited</span><span>Bryant Factory Dealer</span><span>Nextdoor Neighborhood Favorite 2023</span><span>24/7 Emergency Response</span><span>Military &amp; First-Responder 10% Off</span><span>Three Generations of Trade</span><span>Same-Day Service</span><span>Google 4.9★ · 256 Reviews</span>
+    <span>ROC #329176</span><span>BBB A+ Accredited</span><span>Bryant Factory Dealer</span><span>Nextdoor Neighborhood Favorite 2023</span><span>24/7 Emergency Response</span><span>Military &amp; First-Responder 10% Off</span><span>Three Generations of Trade</span><span>Same-Day Service</span><span>Google 4.9★ · 256 Reviews</span>
+  </div>
+</div>
+
+<!-- identity / stats -->
+<section class="sec ident" id="story">
+  <div class="wrap">
+    <div class="ident-grid">
+      <div class="ident-copy reveal">
+        <span class="kick">Not your average HVAC company</span>
+        <h2>We don't take service calls.<br>We run <span style="color:var(--red)">dispatches</span>.</h2>
+        <p>Phoenix Air Department was built on one idea: when your air goes down in the desert, you need a <b>response</b>, not a runaround. So we run like an emergency unit — a live line, a fully-stocked fleet, and techs who treat 115° like the emergency it is.</p>
+        <p>Three generations of trade experience. Honest, written pricing. And a one-year, 100% satisfaction guarantee on everything we touch — heating, cooling, and plumbing alike.</p>
+        <div class="h-cta" style="margin-top:28px">
+          <a class="btn btn-ink" href="#services">See what we do<svg class="ico"><use href="#arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="ident-van reveal" data-d="1">
+        <picture>
+          <source srcset="assets/scraped/company.webp" type="image/webp">
+          <img src="assets/scraped/company.jpg" alt="Phoenix Air Department emergency response service van with shield crest" width="600" height="461">
+        </picture>
+        <div class="cap"><svg class="ico" style="width:1.1em;height:1.1em;color:var(--red)"><use href="#bolt"/></svg> <span><b>The Fleet</b> — Emergency Response Unit · Air Conditioning Specialists</span></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b data-count="11" data-suffix="+"></b><span>Years cooling the Valley, since 2015</span></div>
+      <div class="stat reveal" data-d="1"><b data-count="3"></b><span>Generations of trade craftsmanship</span></div>
+      <div class="stat reveal" data-d="2"><b><span class="s">24/7</span></b><span>Emergency line, answered by a human</span></div>
+      <div class="stat reveal" data-d="3"><b data-count="19" data-suffix="+"></b><span>Valley cities dispatched across</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01 — Services</span>
+      <h2>Everything that keeps your home <span class="r">comfortable</span>.</h2>
+      <p>One Air Department for cooling, heating, air quality, and plumbing — so you've got one number to call when something stops working.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc feat reveal">
+        <div class="svc-img"><div class="svc-tags"><i class="hot">Same-day</i><i>24/7</i></div>
+          <picture><source srcset="assets/scraped/ac-feature.webp" type="image/webp"><img src="assets/scraped/ac-feature.jpg" alt="AC repair" width="790" height="395" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>AC Repair &amp; Emergency Service</h3><p>No cool air? We diagnose fast and fix it right — most repairs done the same day. Capacitors, motors, refrigerant, thermostats, full breakdowns. Day or night.</p><span class="svc-more">Dispatch a tech<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc feat reveal" data-d="1">
+        <div class="svc-img"><div class="svc-tags"><i>Free estimate</i><i class="hot">Financing</i></div>
+          <picture><source srcset="assets/scraped/new-ac-unit.webp" type="image/webp"><img src="assets/scraped/new-ac-unit.jpg" alt="New AC installation" width="400" height="300" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>AC Installation &amp; Replacement</h3><p>A right-sized, high-efficiency system installed clean and quiet — with flexible financing so a new unit doesn't mean sticker shock. Free in-home estimate.</p><span class="svc-more">Get an estimate<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-img"><div class="svc-tags"><i>Repair · Install</i></div>
+          <picture><source srcset="assets/scraped/heating-feature.webp" type="image/webp"><img src="assets/scraped/heating-feature.jpg" alt="Heating and furnace" width="600" height="400" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>Heating &amp; Furnace</h3><p>Desert nights get cold. Tune-ups, repairs, and new furnace installs by factory-trained techs.</p><span class="svc-more">Learn more<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc reveal" data-d="1">
+        <div class="svc-img"><div class="svc-tags"><i>Healthier air</i></div>
+          <picture><source srcset="assets/scraped/iaq.webp" type="image/webp"><img src="assets/scraped/iaq.jpg" alt="Indoor air quality" width="400" height="300" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>Indoor Air Quality</h3><p>Purifiers, UV lamps, and dehumidifiers for cleaner, healthier air for the people you love.</p><span class="svc-more">Learn more<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc reveal" data-d="2">
+        <div class="svc-img"><div class="svc-tags"><i class="hot">24/7</i></div>
+          <picture><source srcset="assets/scraped/kitchen-plumbing.webp" type="image/webp"><img src="assets/scraped/kitchen-plumbing.jpg" alt="Plumbing services" width="400" height="300" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>Plumbing</h3><p>Water heaters, tankless, leaks, drains, softeners and fixtures — your Air Department handles water too.</p><span class="svc-more">Learn more<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc feat reveal">
+        <div class="svc-img"><div class="svc-tags"><i>Design · Build</i><i>Commercial</i></div>
+          <picture><source srcset="assets/scraped/newconstruction-feature.webp" type="image/webp"><img src="assets/scraped/newconstruction-feature.jpg" alt="New construction HVAC" width="600" height="400" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>New Construction &amp; Commercial</h3><p>Full system design, custom ductwork and sheet metal, and indoor air quality for builders, owners, and businesses — start to finish, with 24/7 support after.</p><span class="svc-more">Talk to our team<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+      <article class="svc feat reveal" data-d="1">
+        <div class="svc-img"><div class="svc-tags"><i class="hot">From $9.99/mo</i><i>Members save</i></div>
+          <picture><source srcset="assets/scraped/residential-hvac.webp" type="image/webp"><img src="assets/scraped/residential-hvac.jpg" alt="Maintenance plans" width="400" height="300" loading="lazy"></picture></div>
+        <div class="svc-body"><h3>Maintenance Plans</h3><p>Two visits a year keeps the breakdowns away. Members skip the line, get priority dispatch, and save on every repair — from just $9.99/month. <a href="#plans" style="color:var(--red);font-weight:600">See plans →</a></p><span class="svc-more">Compare tiers<svg class="ico"><use href="#arrow"/></svg></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- why us -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num" style="color:var(--red)">02 — Why Phoenix Air</span>
+      <h2>The reasons your neighbors keep our number saved.</h2>
+      <p>In a city full of HVAC companies, reputation is everything. Here's what people actually say about working with us.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="n">01</div><div class="em"><svg class="ico"><use href="#bolt"/></svg></div><h3>We actually show up</h3><p>"Came out faster than anyone else when my AC broke down." Fast dispatch is the whole reason we exist.</p></div>
+      <div class="why-card reveal" data-d="1"><div class="n">02</div><div class="em"><svg class="ico"><use href="#wallet"/></svg></div><h3>Honest pricing, in writing</h3><p>You'll know the number before we start. No surprise fees, no upsells you didn't ask for, ever.</p></div>
+      <div class="why-card reveal" data-d="2"><div class="n">03</div><div class="em"><svg class="ico"><use href="#hands"/></svg></div><h3>Three generations of craft</h3><p>Over a century of combined trade experience runs in the family — and into every install we do.</p></div>
+      <div class="why-card reveal" data-d="3"><div class="n">04</div><div class="em"><svg class="ico"><use href="#shield"/></svg></div><h3>Licensed, bonded, insured</h3><p>AZ ROC #329176, BBB A+ accredited, and a one-year 100% satisfaction guarantee behind the work.</p></div>
+    </div>
+    <div class="why-quote reveal">
+      <span class="mk">“</span>
+      <div><p>PHX Air Department is who I called when my 24-year-old unit died. They replaced it the next day — with the best price, and weeks before anyone else could.</p><cite>— Verified neighbor review · Nextdoor</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="sec-num">03 — Reviews</span>
+      <h2>Trusted across the Valley.</h2>
+      <p>Real reviews from real Phoenix-area homeowners — the kind that come from showing up when it's 110° out.</p>
+    </div>
+    <div class="rating-summary reveal">
+      <a class="gcard" href="https://www.google.com/search?q=Phoenix+Air+Department+Tempe+AZ+reviews" target="_blank" rel="noopener">
+        <svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg>
+        <span class="num">4.9</span>
+        <span class="meta"><span class="gstars">★★★★★</span><small>256 Google reviews · HVAC contractor in Tempe, AZ</small></span>
+      </a>
+      <a class="bbb-seal" href="https://www.bbb.org/us/az/tempe/profile/air-conditioning-contractor/phoenix-air-department-1126-1000075398" target="_blank" rel="noopener" aria-label="BBB Accredited Business, A+ rating">
+        <img src="assets/scraped/bbb-seal.png" alt="BBB Accredited Business — A+ rating" width="200" height="42">
+      </a>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars"><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg></div><p>"Awesome and honest company with excellent customer service! Came out faster than anyone else when my AC broke down."</p><div class="who"><span class="av">E</span><span><b>Eva R.</b><small>BBB Review</small></span></div></div>
+      <div class="rev reveal" data-d="1"><div class="stars"><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg></div><p>"I appreciated the prompt &amp; professional service we received when our A/C unit decided to quit at 110 degrees. Lifesavers."</p><div class="who"><span class="av">A</span><span><b>Al B.</b><small>BBB Review</small></span></div></div>
+      <div class="rev reveal" data-d="2"><div class="stars"><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg><svg class="ico"><use href="#star"/></svg></div><p>"We use them for ALL of our heating and AC needs. They come as soon as I call — fast, thorough, and well educated."</p><div class="who"><span class="av">M</span><span><b>Maria L.</b><small>Yelp Review</small></span></div></div>
+    </div>
+    <div class="rev-foot reveal">
+      <span class="pill"><svg class="ico" style="width:1em;height:1em"><use href="#star"/></svg>Nextdoor Neighborhood Favorite 2023</span>
+      <span>BBB A+ Accredited Business · Recommended on Facebook · Reviewed on Yelp &amp; Nextdoor</span>
+    </div>
+  </div>
+</section>
+
+<!-- comfort guarantee band -->
+<section class="band dark">
+  <picture><source srcset="assets/curated/comfort.webp" type="image/webp"><img class="bg" src="assets/curated/comfort.jpg" alt="Bright comfortable cool living room" width="2000" height="1333" loading="lazy"></picture>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <div class="band-in reveal">
+      <span class="guar"><svg class="ico"><use href="#shield"/></svg>One-Year 100% Satisfaction Guarantee</span>
+      <h2>Comfort, <span class="r">guaranteed</span> — or we make it right.</h2>
+      <p>Every repair and install is backed by our one-year guarantee. If it's not cool, quiet, and done right, we come back. That's the promise behind the badge.</p>
+      <div class="b-cta">
+        <a class="btn btn-red" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg>Call (602) 586-6001</a>
+        <a class="btn btn-ghost" href="#contact">Book a free estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- plans + financing -->
+<section class="sec plans" id="plans">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="sec-num">04 — Membership</span>
+      <h2>Maintenance plans that pay for themselves.</h2>
+      <p>Join the Air Department and skip the breakdowns. Two seasonal tune-ups a year, priority dispatch, and members-only savings on every repair.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="plan reveal">
+        <span class="tier">Silver</span>
+        <div class="price"><b>$9.99</b><span>/ month</span></div>
+        <ul>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>2 seasonal tune-ups</b> a year</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span>30-point system inspection</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span>Priority scheduling</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span>1-year warranty on parts &amp; labor</span></li>
+        </ul>
+        <a class="btn btn-line" href="#contact">Choose Silver</a>
+      </div>
+      <div class="plan best reveal" data-d="1">
+        <span class="flag">Most popular</span>
+        <span class="tier">Gold</span>
+        <div class="price"><b>$24.99</b><span>/ month</span></div>
+        <ul>
+          <li><svg class="ico"><use href="#check"/></svg><span>Everything in Silver, plus:</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>Free capacitor &amp; motor</b> repairs at tune-ups</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>10% off</b> all repairs</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>$150 off</b> a new system, every year you stay</span></li>
+        </ul>
+        <a class="btn btn-red" href="#contact">Choose Gold</a>
+      </div>
+      <div class="plan reveal" data-d="2">
+        <span class="tier">Platinum</span>
+        <div class="price"><b>$49.99</b><span>/ month</span></div>
+        <ul>
+          <li><svg class="ico"><use href="#check"/></svg><span>Everything in Gold, plus:</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>No diagnostic fees</b>, ever</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span>Front-of-line emergency dispatch</span></li>
+          <li><svg class="ico"><use href="#check"/></svg><span><b>2-year</b> warranty on parts &amp; labor</span></li>
+        </ul>
+        <a class="btn btn-line" href="#contact">Choose Platinum</a>
+      </div>
+    </div>
+    <div class="fin reveal">
+      <div>
+        <span class="kick">Financing · powered by Wisetack</span>
+        <h3>A new system shouldn't break the bank.</h3>
+        <p>Spread your AC or furnace replacement into easy monthly payments. Checking your rate takes about a minute and won't affect your credit.</p>
+      </div>
+      <div class="act">
+        <a class="btn btn-red" href="#contact">See your monthly options<svg class="ico"><use href="#arrow"/></svg></a>
+        <span class="wise">0% APR options · Fast approval · No hard credit check</span>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:18px;color:var(--dim);font-size:.78rem;font-family:var(--mono)">Plan pricing shown is illustrative for this preview — final rates confirmed at signup.</p>
+  </div>
+</section>
+
+<!-- emergency urgency band -->
+<section class="band dark">
+  <picture><source srcset="assets/curated/ac-editorial.webp" type="image/webp"><img class="bg" src="assets/curated/ac-editorial.jpg" alt="Outdoor AC condenser unit" width="2000" height="1333" loading="lazy" style="object-position:70% center"></picture>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <div class="band-in reveal">
+      <span class="kick lite">The Phoenix math</span>
+      <h2 style="margin-top:14px">It's 115° outside. Your home hits 95° in <span class="r">two hours</span>.</h2>
+      <p>A dead AC in the Valley isn't an inconvenience — it's a safety issue. That's why we answer 24/7 and dispatch same-day. Don't wait it out.</p>
+      <div class="b-cta">
+        <a class="btn btn-red" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg>Get same-day service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- service area -->
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="area-copy reveal">
+        <span class="sec-num">05 — Service Area</span>
+        <h2>Dispatched across the <span style="color:var(--red)">Valley</span>.</h2>
+        <p>From Phoenix to the far edges of the East and West Valley, our fleet covers the neighborhoods that need cool air the most. If you're nearby and not listed, call — chances are we've got you.</p>
+        <div class="map"><svg class="ico"><use href="#pin"/></svg> Based in Tempe · 2130 E 5th St, AZ 85281</div>
+      </div>
+      <div class="cities reveal" data-d="1">
+        <span class="star">Phoenix</span><span>Tempe</span><span>Mesa</span><span>Chandler</span><span>Gilbert</span><span>Scottsdale</span><span>Glendale</span><span>Peoria</span><span>Goodyear</span><span>Surprise</span><span>Queen Creek</span><span>San Tan Valley</span><span>Apache Junction</span><span>Gold Canyon</span><span>Sun City</span><span>Cave Creek</span><span>Fountain Hills</span><span>Florence</span><span>Coolidge</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="sec-head" style="margin-bottom:0">
+          <span class="sec-num" style="color:var(--red)">06 — Contact</span>
+          <h2>Dispatch the Air Department.</h2>
+          <p>Call for emergencies, or send the form for free estimates and scheduling. A real person gets back to you fast.</p>
+        </div>
+        <div class="c-lines">
+          <div class="c-line"><span class="em"><svg class="ico"><use href="#phone"/></svg></span><span><b><a href="tel:+16025866001">(602) 586-6001</a></b><small>24/7 emergency line</small></span></div>
+          <div class="c-line"><span class="em"><svg class="ico"><use href="#mail"/></svg></span><span><b><a href="mailto:info@phxairdept.com">info@phxairdept.com</a></b><small>General inquiries</small></span></div>
+          <div class="c-line"><span class="em"><svg class="ico"><use href="#pin"/></svg></span><span><b>2130 E 5th St, Tempe, AZ 85281</b><small>Serving the entire Valley</small></span></div>
+          <div class="c-line"><span class="em"><svg class="ico"><use href="#clock"/></svg></span><span><b>Mon–Fri 8–6 · Sat 9–4</b><small>Emergency response 24/7</small></span></div>
+        </div>
+      </div>
+      <div class="reveal" data-d="1">
+        <form class="form" id="leadform" novalidate>
+          <div id="formfields">
+            <h3>Request your free estimate</h3>
+            <p class="sub">No obligation. Most estimates booked same week — emergencies, same day.</p>
+            <div class="row2">
+              <div class="field"><label for="fn">Name</label><input id="fn" name="name" type="text" placeholder="Jane Smith" required></div>
+              <div class="field"><label for="fp">Phone</label><input id="fp" name="phone" type="tel" placeholder="(602) 555-0123" required></div>
+            </div>
+            <div class="field"><label for="fe">Email</label><input id="fe" name="email" type="email" placeholder="jane@email.com"></div>
+            <div class="field"><label for="fs">What do you need?</label>
+              <select id="fs" name="service">
+                <option>AC repair / emergency</option>
+                <option>AC installation or replacement</option>
+                <option>Heating / furnace</option>
+                <option>Maintenance plan</option>
+                <option>Plumbing</option>
+                <option>New construction / commercial</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field"><label for="fm">Details <span style="text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="fm" name="message" placeholder="Tell us what's going on…"></textarea></div>
+            <button class="btn btn-red" type="submit"><svg class="ico"><use href="#bolt"/></svg>Dispatch my request</button>
+            <p class="fineprint">By submitting you agree to be contacted about your request. We never share your info.</p>
+          </div>
+          <div class="form-done" id="formdone">
+            <div class="ck"><svg class="ico"><use href="#check"/></svg></div>
+            <h3>Request received!</h3>
+            <p>Thanks — the Air Department will reach out shortly. For an emergency right now, call <a href="tel:+16025866001" style="color:var(--red);font-weight:600">(602) 586-6001</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a class="brand" href="#top">
+          <span class="crest"><svg viewBox="0 0 24 28" style="fill:var(--red)"><use href="#shield"/></svg></span>
+          <span class="wm"><b>Phoenix Air Dept.</b><small>Emergency Response Unit</small></span>
+        </a>
+        <p>Phoenix's 24/7 emergency response unit for air, heat &amp; water. Licensed, family-run, and dispatched across the Valley since 2015.</p>
+        <div class="ft-social">
+          <a href="https://www.facebook.com/phxairdept/" aria-label="Facebook" target="_blank" rel="noopener"><svg class="ico"><use href="#fb"/></svg></a>
+          <a href="https://www.instagram.com/phxairdept/" aria-label="Instagram" target="_blank" rel="noopener"><svg class="ico"><use href="#ig"/></svg></a>
+        </div>
+        <a class="bbb-seal" style="margin-top:20px;padding:11px 16px" href="https://www.bbb.org/us/az/tempe/profile/air-conditioning-contractor/phoenix-air-department-1126-1000075398" target="_blank" rel="noopener" aria-label="BBB Accredited Business, A+ rating"><img src="assets/scraped/bbb-seal.png" alt="BBB Accredited Business A+" width="180" height="38"></a>
+      </div>
+      <div class="ft-col">
+        <h4>Services</h4>
+        <a href="#services">AC Repair</a><a href="#services">AC Installation</a><a href="#services">Heating &amp; Furnace</a><a href="#services">Plumbing</a><a href="#services">Indoor Air Quality</a><a href="#plans">Maintenance Plans</a>
+      </div>
+      <div class="ft-col">
+        <h4>Company</h4>
+        <a href="#why">Why Phoenix Air</a><a href="#reviews">Reviews</a><a href="#area">Service Area</a><a href="#contact">Contact</a>
+        <p style="margin-top:18px"><a href="tel:+16025866001" style="color:#fff;font-family:var(--mono)">(602) 586-6001</a></p>
+        <p style="font-family:var(--mono);font-size:.8rem">ROC #329176 · BBB A+</p>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 Phoenix Air Department · Tempe, AZ</span>
+      <span>Licensed · Bonded · Insured · ROC #329176</span>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky mobile bar -->
+<div class="mbar">
+  <a class="call" href="tel:+16025866001"><svg class="ico"><use href="#phone"/></svg>Call now</a>
+  <a class="book" href="#contact"><svg class="ico"><use href="#bolt"/></svg>Book</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var doc=document, root=doc.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* scroll progress + header state */
+  var prog=doc.getElementById("prog"), nav=doc.getElementById("nav");
+  function onScroll(){
+    var st=window.pageYOffset||root.scrollTop;
+    var h=doc.body.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(st/h*100):0)+"%";
+    nav.classList.toggle("scrolled", st>8);
+  }
+  window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+  /* dismiss top bar */
+  var topx=doc.getElementById("topx"), topbar=doc.getElementById("topbar");
+  if(topx){topx.addEventListener("click",function(){topbar.style.display="none";});}
+
+  /* mobile menu */
+  var burger=doc.getElementById("burger"), mmenu=doc.getElementById("mmenu");
+  function closeMenu(){ if(mmenu){mmenu.classList.remove("open");} if(burger){burger.setAttribute("aria-expanded","false");} }
+  if(burger&&mmenu){
+    burger.addEventListener("click",function(){
+      var open=mmenu.classList.toggle("open");
+      burger.setAttribute("aria-expanded",open?"true":"false");
+    });
+    [].forEach.call(mmenu.querySelectorAll("a"),function(a){a.addEventListener("click",closeMenu);});
+    window.addEventListener("resize",function(){ if(window.innerWidth>1080){closeMenu();} });
+  }
+
+  /* reveal on scroll */
+  var revs=[].slice.call(doc.querySelectorAll(".reveal"));
+  if(reduce||!("IntersectionObserver" in window)){
+    revs.forEach(function(el){el.classList.add("in");});
+  }else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    },{rootMargin:"0px 0px -8% 0px",threshold:0.12});
+    revs.forEach(function(el){io.observe(el);});
+  }
+
+  /* count-up stats */
+  function countUp(el){
+    var target=parseFloat(el.getAttribute("data-count"));
+    var suf=el.getAttribute("data-suffix")||"";
+    if(reduce){el.textContent=target+suf;return;}
+    var dur=1300, t0=null;
+    function step(ts){
+      if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1);
+      var eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(target*eased)+suf;
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var counted=false;
+  var statsWrap=doc.querySelector(".stats");
+  if(statsWrap){
+    if(reduce||!("IntersectionObserver" in window)){
+      [].forEach.call(statsWrap.querySelectorAll("[data-count]"),countUp);
+    }else{
+      var io2=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting&&!counted){
+            counted=true;
+            [].forEach.call(statsWrap.querySelectorAll("[data-count]"),countUp);
+            io2.disconnect();
+          }
+        });
+      },{threshold:0.4});
+      io2.observe(statsWrap);
+    }
+  }
+
+  /* lead forms (demo — no backend) */
+  function wireForm(formId,fieldsId,doneId,reqIds){
+    var f=doc.getElementById(formId); if(!f) return;
+    f.addEventListener("submit",function(ev){
+      ev.preventDefault();
+      for(var i=0;i<reqIds.length;i++){ var el=doc.getElementById(reqIds[i]); if(el&&!el.value.trim()){el.focus();return;} }
+      var fields=doc.getElementById(fieldsId); if(fields){fields.style.display="none";}
+      var done=doc.getElementById(doneId); if(done){done.classList.add("show");}
+    });
+  }
+  wireForm("leadform","formfields","formdone",["fn","fp"]);
+  wireForm("heroform","hffields","hfdone",["hn","hp"]);
+
+  /* parallax on full-bleed bands */
+  var bands=[].slice.call(doc.querySelectorAll(".band img.bg"));
+  if(bands.length&&!reduce){
+    var ticking=false;
+    function parallax(){
+      var vh=window.innerHeight;
+      bands.forEach(function(img){
+        var host=img.closest(".band"); if(!host) return;
+        var r=host.getBoundingClientRect();
+        if(r.bottom<-60||r.top>vh+60) return;
+        var prog=(r.top+r.height/2-vh/2)/vh;
+        img.style.transform="translate3d(0,"+(prog*-26).toFixed(1)+"px,0) scale(1.14)";
+      });
+      ticking=false;
+    }
+    window.addEventListener("scroll",function(){ if(!ticking){requestAnimationFrame(parallax);ticking=true;} },{passive:true});
+    window.addEventListener("resize",parallax); parallax();
+  }
+
+  /* active nav link on scroll */
+  var sections=[].slice.call(doc.querySelectorAll("main section[id]"));
+  var navlinks=[].slice.call(doc.querySelectorAll("nav.links a"));
+  if(sections.length&&navlinks.length&&"IntersectionObserver" in window){
+    var byId={}; navlinks.forEach(function(a){byId[a.getAttribute("href")]=a;});
+    var io3=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var a=byId["#"+e.target.id];
+        if(a&&e.isIntersecting){
+          navlinks.forEach(function(x){x.style.color="";x.style.background="";});
+          a.style.color="var(--ink)"; a.style.background="var(--paper2)";
+        }
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    sections.forEach(function(s){io3.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>
