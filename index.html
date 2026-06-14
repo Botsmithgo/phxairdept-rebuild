@@ -103,7 +103,8 @@ nav.links a:hover{color:var(--ink);background:var(--paper2)}
 .hero{position:relative;padding:36px 0 38px;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-180px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(226,19,25,.10),transparent 66%);pointer-events:none}
 .hero-bg{position:absolute;top:0;right:0;bottom:0;width:54%;z-index:0;pointer-events:none}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:58% center}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:58% center;transform-origin:62% 50%;animation:heroZoom 28s ease-in-out infinite alternate;will-change:transform}
+@keyframes heroZoom{from{transform:scale(1.03)}to{transform:scale(1.11)}}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,#fff 10%,rgba(255,255,255,.82) 30%,rgba(255,255,255,.3) 62%,rgba(255,255,255,0) 100%),linear-gradient(0deg,rgba(255,255,255,.4),transparent 24%)}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(30px,5vw,64px);align-items:center}
