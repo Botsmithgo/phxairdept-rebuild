@@ -103,8 +103,8 @@ nav.links a:hover{color:var(--ink);background:var(--paper2)}
 .hero{position:relative;padding:36px 0 38px;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-180px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(226,19,25,.10),transparent 66%);pointer-events:none}
 .hero-bg{position:absolute;top:0;right:0;bottom:0;width:54%;z-index:0;pointer-events:none;overflow:hidden}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:58% center;transform-origin:62% 50%;animation:heroZoom 28s ease-in-out infinite alternate;will-change:transform}
-@keyframes heroZoom{from{transform:scale(1.03)}to{transform:scale(1.11)}}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:52% 72%;transform-origin:50% 50%;animation:heroKen 20s ease-in-out infinite alternate;will-change:transform}
+@keyframes heroKen{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.1) translate(-1.8%,-1.3%)}}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,#fff 10%,rgba(255,255,255,.82) 30%,rgba(255,255,255,.3) 62%,rgba(255,255,255,0) 100%),linear-gradient(0deg,rgba(255,255,255,.4),transparent 24%)}
 .hero .wrap{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(30px,5vw,64px);align-items:center}
@@ -152,11 +152,18 @@ h1.h-title .u svg path{fill:none;stroke:var(--red);stroke-width:8;stroke-linecap
 .hf-done a{color:var(--red);font-weight:600}
 
 /* marquee */
-.marquee{background:var(--ink);color:#fff;overflow:hidden;padding:16px 0;border-top:3px solid var(--red)}
-.marquee .track{display:flex;gap:0;width:max-content;animation:scroll 34s linear infinite}
+.marquee{background:#fff;overflow:hidden;padding:18px 0;border-top:3px solid var(--red);border-bottom:1px solid var(--line)}
+.marquee .track{display:flex;align-items:center;width:max-content;animation:scroll 46s linear infinite}
 .marquee:hover .track{animation-play-state:paused}
-.marquee span{display:inline-flex;align-items:center;gap:13px;padding:0 26px;font-family:var(--mono);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#EDEDED;white-space:nowrap}
-.marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+.marquee .item{display:inline-flex;align-items:center;gap:11px;padding:0 30px;height:46px;white-space:nowrap;border-right:1px solid var(--line)}
+.marquee .item img{height:27px;width:auto;display:block;flex:none}
+.marquee .item img.bryant{height:34px}
+.marquee .item img.bbb{height:29px}
+.marquee .item img.nd{height:26px}
+.marquee .item .gg{height:25px;width:25px;flex:none}
+.marquee .item b{font-family:var(--disp);font-weight:700;font-size:1rem;color:var(--ink);letter-spacing:-.01em}
+.marquee .item small{font-family:var(--mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.marquee .item .gstars{color:#FBBC04;font-size:.92rem;letter-spacing:1px}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* sections */
@@ -548,9 +555,23 @@ footer.ft{background:var(--ink);color:#fff;padding:64px 0 30px}
 
 <!-- marquee -->
 <div class="marquee" aria-hidden="true">
-  <div class="track" id="track">
-    <span>ROC #329176</span><span>BBB A+ Accredited</span><span>Bryant Factory Dealer</span><span>Nextdoor Neighborhood Favorite 2023</span><span>24/7 Emergency Response</span><span>Military &amp; First-Responder 10% Off</span><span>Three Generations of Trade</span><span>Same-Day Service</span><span>Google 4.9★ · 256 Reviews</span>
-    <span>ROC #329176</span><span>BBB A+ Accredited</span><span>Bryant Factory Dealer</span><span>Nextdoor Neighborhood Favorite 2023</span><span>24/7 Emergency Response</span><span>Military &amp; First-Responder 10% Off</span><span>Three Generations of Trade</span><span>Same-Day Service</span><span>Google 4.9★ · 256 Reviews</span>
+  <div class="track">
+    <span class="item"><img class="bryant" src="assets/logos/bryant.svg" alt="Bryant Factory Authorized Dealer"></span>
+    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
+    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
+    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
+    <span class="item"><b>ROC #329176</b></span>
+    <span class="item"><small>Licensed · Bonded · Insured</small></span>
+    <span class="item"><small>24/7 Emergency Response</small></span>
+    <span class="item"><small>Serving the Valley since 2015</small></span>
+    <span class="item"><img class="bryant" src="assets/logos/bryant.svg" alt="Bryant Factory Authorized Dealer"></span>
+    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
+    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
+    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
+    <span class="item"><b>ROC #329176</b></span>
+    <span class="item"><small>Licensed · Bonded · Insured</small></span>
+    <span class="item"><small>24/7 Emergency Response</small></span>
+    <span class="item"><small>Serving the Valley since 2015</small></span>
   </div>
 </div>
 
