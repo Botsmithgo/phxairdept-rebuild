@@ -100,7 +100,7 @@ nav.links a:hover{color:var(--ink);background:var(--paper2)}
 .mobile-menu .mm-call .ico{width:1.1em;height:1.1em}
 
 /* hero */
-.hero{position:relative;padding:36px 0 38px;overflow:hidden}
+.hero{position:relative;padding:36px 0 38px;overflow:hidden;min-height:calc(100vh - 175px);display:flex;align-items:center}
 .hero::before{content:"";position:absolute;top:-180px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(226,19,25,.10),transparent 66%);pointer-events:none}
 .hero-bg{position:absolute;top:0;right:0;bottom:0;width:54%;z-index:0;pointer-events:none;overflow:hidden}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:52% 72%;transform-origin:50% 50%;animation:heroKen 20s ease-in-out infinite alternate;will-change:transform}
@@ -159,7 +159,7 @@ h1.h-title .u svg path{fill:none;stroke:var(--red);stroke-width:8;stroke-linecap
 .marquee .item img{height:27px;width:auto;display:block;flex:none}
 .marquee .item img.bryant{height:34px}
 .marquee .item img.bbb{height:29px}
-.marquee .item img.nd{height:26px}
+.marquee .item img.nd{height:22px}
 .marquee .item .gg{height:25px;width:25px;flex:none}
 .marquee .item b{font-family:var(--disp);font-weight:700;font-size:1rem;color:var(--ink);letter-spacing:-.01em}
 .marquee .item small{font-family:var(--mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
@@ -382,6 +382,7 @@ footer.ft{background:var(--ink);color:#fff;padding:64px 0 30px}
   .ft-top{grid-template-columns:1.4fr 1fr}
 }
 @media(max-width:920px){
+  .hero{min-height:0;display:block}
   .hero-grid{grid-template-columns:1fr;gap:46px}
   .hero-bg{display:none}
   .hero-form{max-width:440px;margin-inline:auto;width:100%}
@@ -551,20 +552,20 @@ footer.ft{background:var(--ink);color:#fff;padding:64px 0 30px}
 <div class="marquee" aria-hidden="true">
   <div class="track">
     <span class="item"><img class="bryant" src="assets/logos/bryant.svg" alt="Bryant Factory Authorized Dealer"></span>
-    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
-    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
-    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
     <span class="item"><b>ROC #329176</b></span>
+    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
     <span class="item"><small>Licensed · Bonded · Insured</small></span>
+    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
     <span class="item"><small>24/7 Emergency Response</small></span>
+    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
     <span class="item"><small>Serving the Valley since 2015</small></span>
     <span class="item"><img class="bryant" src="assets/logos/bryant.svg" alt="Bryant Factory Authorized Dealer"></span>
-    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
-    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
-    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
     <span class="item"><b>ROC #329176</b></span>
+    <span class="item"><svg class="gg" viewBox="0 0 48 48"><use href="#gicon"/></svg><b>4.9</b><span class="gstars">★★★★★</span><small>256 Google reviews</small></span>
     <span class="item"><small>Licensed · Bonded · Insured</small></span>
+    <span class="item"><img class="bbb" src="assets/scraped/bbb-seal.png" alt="BBB A+ Accredited Business"></span>
     <span class="item"><small>24/7 Emergency Response</small></span>
+    <span class="item"><img class="nd" src="assets/logos/nextdoor.svg" alt="Nextdoor"><small>Neighborhood Favorite ’23</small></span>
     <span class="item"><small>Serving the Valley since 2015</small></span>
   </div>
 </div>
